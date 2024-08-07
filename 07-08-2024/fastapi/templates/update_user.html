@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update User</h1>
+        <form action="/update_user/{{ user.id }}" method="post">
+            <input type="text" name="name" value="{{ user.name }}" required />
+            <button type="submit">Update User</button>
+        </form>
+        <a href="/users/{{ user.id }}">Back to User Details</a>
+    </div>
+</body>
+</html>
